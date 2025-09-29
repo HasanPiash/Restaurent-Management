@@ -16,6 +16,7 @@ class Menu:
         if item:
             self.items.remove(item)
             print("Item deleted")
+            
         else:
             print("item not found")
 
