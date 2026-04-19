@@ -2,9 +2,11 @@ class Menu:
     def __init__(self):
         self.items=[]  # Database of items
 
+    
     def add_menu_item(self, item):
         self.items.append(item)
 
+    
     def find_item(self,item_name):
         for item in self.items:
             if item.name.lower()==item_name.lower():
