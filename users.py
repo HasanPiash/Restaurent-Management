@@ -64,19 +64,19 @@ class Employee(User):
 class Admin(User):
     def __init__(self, name, email, phone, address):
         super().__init__(name, phone, email, address)
-
+    
     
     def add_employee(self, restaurent, employee):
         restaurent.add_employee(employee)
 
-        
+         
     def view_employee(self, restaurent):
         restaurent.view_employee()
-
+    
       
     def add_new_item(self, restaurent, item):
         restaurent.menu.add_menu_item(item)
-
+   
     
     def remove_item(self, restaurent, item):
         restaurent.menu.remove_item(item)
